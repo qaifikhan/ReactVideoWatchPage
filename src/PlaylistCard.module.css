@@ -1,0 +1,19 @@
+.PlaylistCard {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.PlaylistCard > img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+}
+
+.PlaylistCard > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 16px;
+}
