@@ -3,6 +3,8 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     margin-bottom: 16px;
+    cursor: pointer;
+    background-color: white;
 }
 
 .PlaylistCard > img {
@@ -16,4 +18,8 @@
     font-weight: 600;
     margin: 0;
     padding: 16px;
+}
+
+.Active {
+    border: 2px solid blueviolet;
 }

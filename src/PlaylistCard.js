@@ -1,14 +1,21 @@
 import React from  'react';
+import { Link } from 'react-router-dom';
 
 import classes from './PlaylistCard.module.css';
 
 const PlaylistCard = (props) => {
-    console.log(props);
+    const classesArr = [classes.PlaylistCard];
+    if(props.currentVideo === props.cardPos) {
+        classesArr.push(classes.Active);
+    }
+
     return(
-        <div className={classes.PlaylistCard}>
-            <img src={props.thumbnail} alt="Thumbnail" />
-            <h3>{props.videoTitle}</h3>
-        </div>
+        <Link to={`/watch/${props.id}`}>
+            <div className={classesArr.join(' ')}>
+                <img src={props.thumbnail} alt="Thumbnail" />
+                <h3>{props.videoTitle}</h3>
+            </div>
+        </Link>
     );
 }
 

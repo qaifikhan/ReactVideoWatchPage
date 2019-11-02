@@ -1,0 +1,10 @@
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.VideoCard {
+    width: calc(25% - 16px);
+    margin: 8px;
+}
